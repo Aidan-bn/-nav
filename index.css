@@ -6,3 +6,91 @@
 body{
     background-color: brown;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: bisque;
+    border: 1px solid bisque;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ul-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.li-nav {
+    padding: 1px 10px;
+}
+
+.hamburger {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.img-hamburger {
+    width: 30px;
+    height: 30px;
+}
+
+@media  only screen and (max-width: 600px) {
+    body {
+        background-color: blueviolet;
+    }
+
+    header {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .img-hamburger {
+        cursor: pointer;
+    }
+    
+    .mob-overlay {
+        width: 100%;
+        height: 100vh;
+        background-color: bisque;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .mob-ul-nav {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mob-li-nav {
+        padding: 20px 1px;
+    }
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: bisque;
+    font-size: 40px;
+}
